@@ -1,0 +1,30 @@
+<!-- templates/classement.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classement</title>
+</head>
+<body>
+    <h1>Classement des équipes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Ville</th>
+                <th>Points</th>
+                <th>Buts</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for equipe in equipes %}
+            <tr>
+                <td>{{ equipe.nom }}</td>
+                <td>{{ equipe.ville }}</td>
+                <td>{{ equipe.points }}</td>
+                <td>{{ equipe.buts_marques }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
