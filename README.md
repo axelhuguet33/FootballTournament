@@ -43,7 +43,7 @@ python manage.py migrate
 8. Lancez le serveur de développement :
 python manage.py runserver
 
-9 Accédez à l'application dans votre navigateur :
+9. Accédez à l'application dans votre navigateur :
 http://127.0.0.1:8000/
 
 ### Tests
